@@ -33,8 +33,8 @@ router.post("/userTask", async (req, res) => {
 
 router.post("/deleteTask", async (req, res) => {
     try {
-      const userTasks = await Task.deleteOne({task: req.body.task}) 
-      res.send(userTasks);
+      const deletedTask = await Task.deleteOne({_id: req.body._id}) 
+      res.send(deletedTask);
     } catch (err) {
       res.status(400).send(err);
     }
