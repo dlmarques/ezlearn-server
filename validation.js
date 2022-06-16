@@ -22,6 +22,13 @@ const dataValidation = data => {
   return schema.validate(data);
 };
 
+const taskValidation = data => {
+  const schema = Joi.object({
+    id: Joi.string().required(),
+    task: Joi.string().required(),
+  });
+  return schema.validate(data);
+}
 
 //Login Validation
 const loginValidation = data => {
@@ -37,3 +44,4 @@ const loginValidation = data => {
 module.exports.registerValidation = registerValidation;
 module.exports.loginValidation = loginValidation;
 module.exports.dataValidation = dataValidation;
+module.exports.taskValidation = taskValidation;
