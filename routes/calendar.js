@@ -12,7 +12,8 @@ router.post("/addEvent", async (req, res) => {
     const event = new Event({
       id: req.body.id,
       event: req.body.event,
-      date: req.body.date,
+      start: req.body.start,
+      end: req.body.end,
     });
   
     try {
@@ -31,6 +32,16 @@ router.post("/getEvent", async (req, res) => {
       } catch (err) {
         res.status(400).send(err);
       }
+});
+
+//delete event
+router.post("/deleteEvent", async (req, res) => {
+  try {
+    const deletedEvent = await Event.deleteOne({_id: req.body._id}) 
+    res.send(deletedEvent);
+  } catch (err) {
+    res.status(400).send(err);
+  }
 });
 
 

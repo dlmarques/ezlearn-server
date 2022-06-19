@@ -34,7 +34,8 @@ const eventValidation = data => {
   const schema = Joi.object({
     id: Joi.string().required(),
     event: Joi.string().required(),
-    date: Joi.string().required()
+    start: Joi.string().required(),
+    end: Joi.string().required()
   });
   return schema.validate(data);
 }
