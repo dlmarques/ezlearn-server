@@ -39,6 +39,17 @@ const eventValidation = data => {
   });
   return schema.validate(data);
 }
+/* 
+const courseValidation = data => {
+  const schema = Joi.object({
+    id: Joi.string().required(),
+    courseName: Joi.string().required(),
+    duration: Joi.string().required(),
+    image: Joi..required()
+  });
+  return schema.validate(data);
+}
+ */
 
 //Login Validation
 const loginValidation = data => {
@@ -56,4 +67,5 @@ module.exports.loginValidation = loginValidation;
 module.exports.dataValidation = dataValidation;
 module.exports.taskValidation = taskValidation;
 module.exports.eventValidation = eventValidation;
+//module.exports.courseValidation = courseValidation;
 

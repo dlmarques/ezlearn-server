@@ -8,6 +8,7 @@ const cors = require('cors')
 const authRoute = require("./routes/auth");
 const todoRoute = require("./routes/todo");
 const calendarRoute = require("./routes/calendar");
+const courseRoute = require('./routes/courses')
 
 dotenv.config();
 
@@ -26,5 +27,6 @@ app.use(express.json());
 app.use("/api/user", authRoute);
 app.use("/api/todo", todoRoute);
 app.use("/api/calendar", calendarRoute);
+app.use("/api/courses", courseRoute);
 
 app.listen(3001, () => console.log("server running"));
