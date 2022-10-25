@@ -8,7 +8,7 @@ This project is currently in development.
 
 ## Installation and Setup Instructions  
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down this repository. You will need `node` installed globally on your machine.  
 
 Installation:
 
