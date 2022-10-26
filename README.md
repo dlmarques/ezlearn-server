@@ -31,4 +31,8 @@ To Visit App:
    This is a side project where I can evolve my skills and work with the latest and best technologies. This project allowed me to work and evolve my backend skills, build my own APIs, and increase my frontend skills too! I have experience with thinking and creating all the project and gave me much knowledge.
 
 
+## License
+
+Copyright © 2022 dlmarques. All rights reserved.
+
 
